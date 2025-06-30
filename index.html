@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Bug Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Smart Bug Tracker</h1>
+
+  <div class="controls">
+    <input type="text" id="bugTitle" placeholder="Bug title" />
+    <input type="text" id="bugDesc" placeholder="Description" />
+    <select id="bugPriority">
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+    <select id="bugCategory">
+      <option value="UI">UI</option>
+      <option value="Backend">Backend</option>
+      <option value="API">API</option>
+    </select>
+    <input type="text" id="assignedTo" placeholder="Assign to" />
+    <button onclick="addBug()">Add Bug</button>
+    <button onclick="exportCSV()">Export CSV</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+
+  <div class="filters">
+    <select id="filterPriority" onchange="filterBugs()">
+      <option value="">All Priorities</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+    <select id="filterStatus" onchange="filterBugs()">
+      <option value="">All Statuses</option>
+      <option value="Open">Open</option>
+      <option value="Closed">Closed</option>
+    </select>
+  </div>
+
+  <div id="bugList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
