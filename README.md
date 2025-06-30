@@ -1,1 +1,2 @@
 # bug-tracker-web-app
+The Bug Tracker web application is a user-friendly tool that allows users to report, view, and manage software bugs based on their priority. It uses HTML, CSS, and JavaScript to create interactive UI elements, with JavaScript handling DOM manipulation and event handling. CSS enhances user experience with modern design, dark mode support, and smooth animations. The application runs entirely in the browser, making it lightweight and fast. It reflects the user's understanding of front-end development principles, user interface design, and JavaScript logic.
